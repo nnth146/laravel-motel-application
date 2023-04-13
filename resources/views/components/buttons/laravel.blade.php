@@ -1,0 +1,1 @@
+<a class="block text-blue-336B87 lg:text-2xl" href="#">LARAVEL <strong>MOTEL</strong></a>
