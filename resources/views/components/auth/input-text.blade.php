@@ -1,0 +1,1 @@
+<input {{ $attributes->merge(['class' => 'px-3 py-2 border-[1px] rounded-md focus:outline-blue-336B87 border-blue-336B87 border-solid']) }}>

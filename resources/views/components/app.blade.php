@@ -1,4 +1,4 @@
-@props(['navigation', 'main', 'footer'])
+@props(['head','navigation', 'main', 'footer'])
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel Motel</title>
+    {{ $head ?? null }}
 </head>
 
 <body {{ $attributes }}>
@@ -23,6 +24,6 @@
             {{ $main ?? null }}
         </div>
     </div>
+    {{ $slot }}
 </body>
-
 </html>
