@@ -48,24 +48,46 @@
         </x-navigation>
     </x-slot>
     <x-slot name="main">
-        <p class="mt-12 text-[18px] font-semibold text-blue-336B87">Tìm kiếm theo</p>
-        <div class="flex gap-x-2">
-            <select class="min-w-36 rounded-md bg-blue-336B87 p-3 font-semibold text-white" id="search-type"
-                name="search-type">
-                <option value="1" selected>Tên Phòng</option>
-                <option value="2">Tên Chủ Trọ</option>
-            </select>
-            <input class="grow rounded-md bg-gray-300 px-2 focus:bg-white focus:outline-blue-336B87" type="text"
-                placeholder="Nhập tên bạn muốn tím kiếm">
-            <a class="flex items-center rounded-md bg-blue-336B87 px-3 font-semibold text-white" href="">
-                Tìm kiếm
-            </a>
+        <div class="mt-12 grid grid-cols-2 gap-4 rounded-md border-2 border-solid border-blue-336B87 p-2">
+            <img class="w-full rounded-md" src="{{ Vite::asset('resources/images/motel.jpg') }}" alt="motel">
+            <div
+                class="relative grid grid-cols-[minmax(0,1fr)_50px] overflow-y-auto text-lg xl:text-xl text-blue-336B87 scrollbar-hide">
+                <div class="break-words">
+                    <p>Tên phòng: <span class="font-semibold">Phòng 301</span></p>
+                    <p>Giá: <span class="font-semibold">1 triệu/1 tháng</span></p>
+                    <p>Đồ dùng: <span class="font-semibold">Điều hoà + bình nóng lạnh</span></p>
+                    <p>Địa chỉ: <span class="font-semibold">Tổ 2 phường Tân Thịnh, TP Thái Nguyên</span></p>
+                    <p>Số điện thoại: <span class="font-semibold">0385328068</span></p>
+                    <p>Thông tin thêm: <span class="font-semibold">Phòng sạch sẽ gọn gàng</span></p>
+                </div>
+
+                <div></div>
+
+                <div class="absolute top-0 right-0 m-2 flex items-center gap-1 text-blue-336B87">
+                    <p class="font-semibold">99</p>
+                    <x-icon class="h-4 w-4 fill-blue-336B87" name="user"></x-icon>
+                </div>
+                <img class="absolute bottom-0 right-0 z-10 m-2 h-9 w-9 rounded-full"
+                    src="{{ Vite::asset('resources/images/avatar.jpg') }}" alt="">
+            </div>
         </div>
-        <p class="mt-4 text-[28px] font-semibold text-blue-336B87">Danh sách các phòng trọ</p>
-        <div class="mt-4 grid gap-4 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2">
-            <a href="{{ route('detail') }}">
-                <x-motel.card></x-motel.card>
-            </a>
+
+        <div class="my-12">
+            <p class="text-2xl text-blue-336B87 font-semibold">Danh sách các phòng có cùng chủ phòng</p>
+            <div class="mt-4 grid gap-4 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2">
+                <a href="{{ route('detail') }}">
+                    <x-motel.card></x-motel.card>
+                </a>
+                <a href="{{ route('detail') }}">
+                    <x-motel.card></x-motel.card>
+                </a>
+                <a href="{{ route('detail') }}">
+                    <x-motel.card></x-motel.card>
+                </a>
+                <a href="{{ route('detail') }}">
+                    <x-motel.card></x-motel.card>
+                </a>
+            </div>
         </div>
     </x-slot>
 </x-app>

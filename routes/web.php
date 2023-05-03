@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::view('login', 'auth.login')->name('login');
+Route::view('register', 'auth.register')->name('register');
+
+Route::post('login', function () {
+    return redirect()->route('login');
+})->name('login');
+
+Route::post('register', function () {
+    return redirect()->route('register');
+})->name('register');
+
+Route::view('detail', 'motel.detail')->name('detail');
