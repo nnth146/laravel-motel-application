@@ -111,7 +111,7 @@
         <div class="my-12">
             <div class="flex justify-between">
                 <p class="text-2xl font-semibold text-blue-336B87">Danh sách các phòng của bạn</p>
-                <a class="w-20 rounded-md bg-blue-336B87 p-2 text-center font-semibold text-white"
+                <a href="{{ route('add-motel') }}" class="w-20 rounded-md bg-blue-336B87 p-2 text-center font-semibold text-white"
                     href="">Add</a>
             </div>
             <div class="mt-4 grid gap-4 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2">
@@ -136,7 +136,7 @@
                                 <x-icon class="h-4 w-4 fill-blue-336B87" name="user"></x-icon>
                             </div>
                             <div class="absolute bottom-0 right-0 flex flex-col gap-1">
-                                <a href="">
+                                <a href="{{ route('edit-motel') }}">
                                     <x-icon class="h-10 w-10 rounded-md bg-gray-100 p-2 fill-blue-336B87" name="edit"></x-icon>
                                 </a>
                                 <a href="">

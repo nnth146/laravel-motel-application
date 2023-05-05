@@ -33,3 +33,7 @@ Route::view('detail', 'motel.detail')->name('detail');
 Route::view('profile', 'user.profile')->name('profile');
 
 Route::view('editprofile', 'user.edit-profile')->name('edit-profile');
+
+Route::view('add', 'motel.add')->name('add-motel');
+
+Route::view('edit', 'motel.edit')->name('edit-motel');
