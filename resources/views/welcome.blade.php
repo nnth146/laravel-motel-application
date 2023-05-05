@@ -5,7 +5,7 @@
                 <x-buttons.laravel></x-buttons.laravel>
             </x-slot>
             <x-slot name="right">
-                @if (false)
+                @if (true)
                     <x-dropdown>
                         <x-slot name="trigger">
                             <div class="flex items-center gap-2">
@@ -19,7 +19,7 @@
                             <div>
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="{{ route('edit-profile') }}">
                                             <div class="flex items-center gap-2 p-3 hover:bg-gray-50">
                                                 <x-icon class="h-5 w-5 fill-blue-336B87" name="user"></x-icon>
                                                 <p class="text-blue-336B87">My profile</p>

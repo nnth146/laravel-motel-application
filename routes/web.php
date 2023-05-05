@@ -29,3 +29,7 @@ Route::post('register', function () {
 })->name('register');
 
 Route::view('detail', 'motel.detail')->name('detail');
+
+Route::view('profile', 'user.profile')->name('profile');
+
+Route::view('editprofile', 'user.edit-profile')->name('edit-profile');

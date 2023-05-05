@@ -22,6 +22,7 @@
             <x-icon class="h-4 w-4 fill-blue-336B87" name="user"></x-icon>
         </div>
         <img class="absolute bottom-0 right-0 z-10 m-2 h-9 w-9 rounded-full"
-            src="{{ Vite::asset('resources/images/avatar.jpg') }}" alt="">
+            src="{{ Vite::asset('resources/images/avatar.jpg') }}" alt="motel">
+
     </div>
 </div>
