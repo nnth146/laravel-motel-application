@@ -5,7 +5,7 @@
                 <x-buttons.laravel></x-buttons.laravel>
             </x-slot>
             <x-slot name="right">
-                @if (true)
+                @if (false)
                     <x-dropdown>
                         <x-slot name="trigger">
                             <div class="flex items-center gap-2">

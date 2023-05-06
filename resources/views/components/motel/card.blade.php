@@ -8,6 +8,7 @@
         class="relative grid grid-cols-[minmax(0,1fr)_50px] overflow-y-auto p-2 text-lg text-blue-336B87 scrollbar-hide">
         <div class="break-words">
             <p>Tên phòng: <span class="font-semibold">Phòng 301</span></p>
+            <p>Trạng thái: <span class="font-semibold">Đã có người ở</span></p>
             <p>Giá: <span class="font-semibold">1 triệu/1 tháng</span></p>
             <p>Đồ dùng: <span class="font-semibold">Điều hoà + bình nóng lạnh</span></p>
             <p>Địa chỉ: <span class="font-semibold">Tổ 2 phường Tân Thịnh, TP Thái Nguyên</span></p>

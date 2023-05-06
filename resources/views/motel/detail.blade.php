@@ -54,6 +54,7 @@
                 class="relative grid grid-cols-[minmax(0,1fr)_50px] overflow-y-auto text-lg xl:text-xl text-blue-336B87 scrollbar-hide">
                 <div class="break-words">
                     <p>Tên phòng: <span class="font-semibold">Phòng 301</span></p>
+                    <p>Trạng thái: <span class="font-semibold">Đã có người ở</span></p>
                     <p>Giá: <span class="font-semibold">1 triệu/1 tháng</span></p>
                     <p>Đồ dùng: <span class="font-semibold">Điều hoà + bình nóng lạnh</span></p>
                     <p>Địa chỉ: <span class="font-semibold">Tổ 2 phường Tân Thịnh, TP Thái Nguyên</span></p>
@@ -71,7 +72,7 @@
                     src="{{ Vite::asset('resources/images/avatar.jpg') }}" alt="">
             </div>
         </div>
-
+        
         <div class="my-12">
             <p class="text-2xl text-blue-336B87 font-semibold">Danh sách các phòng có cùng chủ phòng</p>
             <div class="mt-4 grid gap-4 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2">
